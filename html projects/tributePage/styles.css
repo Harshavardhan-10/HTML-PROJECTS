@@ -1,0 +1,57 @@
+#main{
+    max-height: fit-content;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+#title{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.p{
+    text-align: center;
+}
+#img-div{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 17px;
+    background-color: beige;
+    align-items: center;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    padding: 0px 0px 10px 0px;
+    align-items: center;
+}
+ #tribute-info{ 
+    max-width: 720px;  
+    line-height: 25px;
+    margin: 0 auto;
+    font-size: larger;
+    line-height: 2.5rem;
+}
+
+h3{
+    text-align: center;
+}
+
+.details ul li{
+    max-width: 400px;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+#quote h4{
+    margin: 10px auto;
+    max-width: 700px;
+    text-align: center;
+}
+#footer{
+    text-align: center;
+    font-size: large;
+}
