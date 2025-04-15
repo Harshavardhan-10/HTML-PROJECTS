@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+ <h1 class="title">Calculator</h1>
+  <div class="calculator">
+  <div id="screen" class="screen">0</div>
+  <div class="buttons">
+    <button onclick="clearScreen()" class="clear">C</button>
+    <button onclick="backspace()" class="back">⌫</button>
+    <button onclick="appendValue('(')">(</button>
+    <button onclick="appendValue(')')">)</button>
+    <button onclick="appendValue('/')" class="operator">÷</button>
+
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('*')" class="operator">×</button>
+
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('-')" class="operator">−</button>
+
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="appendValue('+')" class="operator">+</button>
+    <button onclick="appendValue('.')">.</button>
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="showHistory()" class="history">REC</button>
+    <button onclick="calculate()" class="equal">=</button>
+  </div>
+  <div id="history-box" class="history-box" style="display: none;"></div>
+</div>
+<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

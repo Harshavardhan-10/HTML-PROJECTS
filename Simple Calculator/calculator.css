@@ -1,0 +1,120 @@
+body {
+        margin: 0;
+        background: #f0f4f8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start; /* was center */
+        justify-content: center;
+        padding-top: 100px; /* add spacing from top */
+        position: relative;
+    }
+    .title {
+        position: absolute;
+        top: 40px;
+        font-size: 32px;
+        color: #00040a;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+
+    .calculator {
+      background: #ffffff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      width: 320px;
+      animation: fadeIn 0.4s ease;
+      max-height: 100vh; 
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .screen {
+      width: 100%;
+      height: 60px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      text-align: right;
+      padding: 10px;
+      font-size: 24px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .buttons button {
+      padding: 18px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      background: #e2e8f0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .buttons button:hover {
+      background: #cbd5e1;
+    }
+
+    .buttons .operator {
+      background: #93c5fd;
+    }
+
+    .buttons .operator:hover {
+      background: #60a5fa;
+    }
+
+    .buttons .equal {
+      background: #34d399;
+      grid-column: span 4;
+    }
+
+    .buttons .equal:hover {
+      background: #10b981;
+    }
+
+    .buttons .clear {
+      background: #fca5a5;
+    }
+
+    .buttons .clear:hover {
+      background: #f87171;
+    }
+    .buttons .back {
+        background: #fcd34d; 
+    }
+
+    .buttons .back:hover {
+        background: #fbbf24;
+    }
+    .history {
+        background: #d8b4fe;
+        grid-column: span 1;
+    }
+
+    .history:hover {
+        background: #c084fc;
+    }
+
+    .history-box {
+        margin-top: 16px;
+        padding: 12px;
+        background: #f1f5f9;
+        border-radius: 10px;
+        font-size: 14px;
+        color: #334155;
+        max-height: 100px;
+        overflow-y: auto;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+    }
